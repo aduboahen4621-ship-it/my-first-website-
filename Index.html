@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adu Boahen Emmanuel - Web Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    #title {
+      text-align: center;
+      color: #1a2a4a;
+    }
+    #description {
+      text-align: center;
+      color: #555;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    label, p {
+      display: block;
+      margin-top: 18px;
+      font-weight: bold;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+    }
+    button {
+      background: #CE1126;
+      background: linear-gradient(to right, #CE1126, #FCD116, #006B3F);
+      color: white;
+      font-weight: bold;
+      border: none;
+      margin-top: 25px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .inline-label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Adu Boahen Emmanuel - Ghana</h1>
+    <p id="description">
+      Hello! My name is Adu Boahen Emmanuel from Ghana. This is my project work.
+      I designed this web page to prove how experienced and skilled I am in creating modern, responsive and user-friendly websites.
+    </p>
+
+    <form id="survey-form">
+      
+      <label id="name-label" for="name">Full Name</label>
+      <input id="name" type="text" placeholder="Enter your full name" required>
+
+      <label id="email-label" for="email">Email Address</label>
+      <input id="email" type="email" placeholder="Enter your email address" required>
+
+      <label id="number-label" for="number">Years of Experience (to rate my work)</label>
+      <input id="number" type="number" min="1" max="20" placeholder="e.g. 5 years">
+
+      <label for="dropdown">How did you find my work?</label>
+      <select id="dropdown">
+        <option value="">Select an option</option>
+        <option value="portfolio">My Portfolio</option>
+        <option value="github">GitHub</option>
+        <option value="friend">Friend Referral</option>
+      </select>
+
+      <p>Would you hire me for a web project?</p>
+      <label class="inline-label"><input type="radio" name="hire" value="yes"> Yes, you are very good!</label>
+      <label class="inline-label"><input type="radio" name="hire" value="maybe"> Maybe, show more</label>
+
+      <p>Which of my skills impressed you?</p>
+      <label class="inline-label"><input type="checkbox" value="html"> HTML & Semantic Design</label>
+      <label class="inline-label"><input type="checkbox" value="css"> CSS & Responsive Design</label>
+      <label class="inline-label"><input type="checkbox" value="forms"> Forms & User Experience</label>
+
+      <p>Your Feedback for Adu Boahen Emmanuel</p>
+      <textarea placeholder="Write your feedback about my web development skills here..."></textarea>
+
+      <button id="submit" type="submit">Submit Feedback</button>
+
+    </form>
+  </div>
+</body>
+</html>
